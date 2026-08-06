@@ -1,8 +1,10 @@
-# Search Agent — EGVS Evaluation Minimal Reproduction Package
+# MMShopBench: A Real-Log Benchmark for Multimodal, Multi-Turn Shopping Agents
 
-Paper: [MMShopBench: A Real-Log Benchmark for Multimodal, Multi-Turn Shopping Agents](https://arxiv.org/abs/2607.29002)
+Paper: [arXiv:2607.29002](https://arxiv.org/abs/2607.29002)
 
 Dataset availble:[kellyhao/mmshopbench](https://huggingface.co/datasets/kellyhao/mmshopbench)
+
+![MMShopBench overview](assets/overview.png)
 
 This directory is the minimal reproducible code package for the paper. It contains only the code required by the entry script
 `opencode_searchagent/run_egvs_122a10sft_top1cards_3id.sh`, plus the smaller data files.
