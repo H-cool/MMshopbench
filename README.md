@@ -1,5 +1,7 @@
 # Search Agent — EGVS Evaluation Minimal Reproduction Package
 
+Paper: [MMShopBench: A Real-Log Benchmark for Multimodal, Multi-Turn Shopping Agents](https://arxiv.org/abs/2607.29002)
+
 Dataset availble:[kellyhao/mmshopbench](https://huggingface.co/datasets/kellyhao/mmshopbench)
 
 This directory is the minimal reproducible code package for the paper. It contains only the code required by the entry script
@@ -51,7 +53,7 @@ variables) as listed in the table, and you are ready to run.
 | File | Size | Placement path / environment variable |
 | --- | --- | --- |
 | BM25 text index `bm25.pkl` | ~87 MB | `mmshopbench_ask_ai_benchmark/indexes/text/bm25.pkl` (`OFFLINE_TEXT_INDEX_PATH`) |
-| Product detail evidence `image_manifest_details.v0.6.unique.jsonl` | ~1.14 GB | `mmshopbench_ask_ai_benchmark/indexes/image/…` (`OFFLINE_DETAIL_PATH`) |
+| Product detail evidence `image_manifest_details.v0.6.unique.jsonl` | ~620 MB | `mmshopbench_ask_ai_benchmark/indexes/image/…` (`OFFLINE_DETAIL_PATH`) |
 | Image vectors `image_embeddings.npy` | ~424 MB | `mmshopbench_ask_ai_benchmark/indexes/image/vector_0722/` (`OFFLINE_IMAGE_INDEX_DIR`) |
 | Image metadata `image_metadata.jsonl` | ~45 MB | same directory as above |
 | Marqo-Ecommerce CLIP model | ~7.6 GB | any path, specified via `OFFLINE_IMAGE_MODEL_NAME` (default `/path/to/marqo-ecommerce-embeddings-L`) |
