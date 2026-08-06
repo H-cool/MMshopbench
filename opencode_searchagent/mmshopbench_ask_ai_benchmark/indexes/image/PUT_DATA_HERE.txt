@@ -1,0 +1,14 @@
+在此目录放置离线图像检索所需的大文件:
+
+1) 商品详情证据侧车 (platform_product_search / product_image_search 均用它做字段补全):
+     image_manifest_details.v0.6.unique.jsonl   (约 1.14 GB, 每行一个商品 JSON)
+   路径由环境变量指定:
+     OFFLINE_DETAIL_PATH=${OPENCODE_ROOT}/mmshopbench_ask_ai_benchmark/indexes/image/image_manifest_details.v0.6.unique.jsonl
+
+2) 图像向量索引目录 vector_0722/ (product_image_search 使用):
+     vector_0722/image_embeddings.npy    (约 424 MB, (N, dim) float32, L2 归一化)
+     vector_0722/image_metadata.jsonl    (约 45 MB, 每个向量一行商品元数据)
+   默认路径 = mmshopbench_ask_ai_benchmark/indexes/image/vector_0722
+   可用环境变量覆盖: OFFLINE_IMAGE_INDEX_DIR
+
+由 mmshopbench_benchmark/offline_image_search.py 加载。

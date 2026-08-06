@@ -1,0 +1,8 @@
+在此目录放置 BM25 文本检索索引（platform_product_search 工具使用）:
+
+  bm25.pkl        (约 87 MB)
+
+运行脚本通过环境变量指定路径:
+  OFFLINE_TEXT_INDEX_PATH=${OPENCODE_ROOT}/mmshopbench_ask_ai_benchmark/indexes/text/bm25.pkl
+
+由 mmshopbench_benchmark/text_index.py 通过 TextIndex.load() 读取（标准库 pickle）。
